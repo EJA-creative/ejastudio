@@ -335,6 +335,142 @@ footer {
   display: block;
 }
 
+/* CASE OVERVIEW — two column text */
+.case-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  padding: 5rem 4rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.case-overview-col p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+/* CASE PROCESS — mockup section */
+.case-process {
+  padding: 5rem 4rem;
+  background: var(--gray);
+}
+
+.case-process-label {
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+}
+
+.case-process-label h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.case-process-label p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.case-process img {
+  width: 100%;
+  display: block;
+}
+
+/* CASE SCHEMATIC */
+.case-schematic {
+  background: #111;
+  padding: 4rem;
+  margin: 0;
+}
+
+.case-schematic-label {
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+}
+
+.case-schematic-label h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.case-schematic-label p {
+  font-size: 0.9rem;
+  color: #888;
+  line-height: 1.6;
+}
+
+.case-schematic-label .section-label {
+  color: var(--accent);
+}
+
+.case-schematic-pages {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #333;
+}
+
+.case-schematic-pages img {
+  width: 100%;
+  display: block;
+}
+
+/* RESULT INTRO */
+.case-result-intro {
+  padding: 5rem 4rem 3rem;
+  max-width: 900px;
+}
+
+.case-result-intro h2 {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  margin: 0.75rem 0 2.5rem;
+  max-width: 32ch;
+}
+
+/* FULL BLEED PAYOFF PHOTOS */
+.case-photo-full {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  margin-bottom: 4px;
+}
+
+.case-stat-row {
+  display: flex;
+  gap: 3rem;
+  padding: 3rem 0;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  margin: 3rem 0;
+}
+
+.case-stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--black);
+  margin-bottom: 0.3rem;
+}
+
+.case-stat-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mid-gray);
+}
+
 .case-nav {
   display: flex;
   justify-content: space-between;
