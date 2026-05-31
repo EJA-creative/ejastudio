@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EJA Studio — Creative Lead for Technical Brands</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,6 +13,9 @@
 
   <nav>
     <a href="index.html" class="nav-logo">EJA Studio</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <ul class="nav-links">
       <li><a href="work.html">Work</a></li>
       <li><a href="about.html">About</a></li>
@@ -24,7 +28,7 @@
     <p class="hero-eyebrow">Creative Lead for Technical Brands</p>
     <h1>Senior creative for brands that build things.</h1>
     <p class="hero-sub">I help technical and industrial brands look as good as their products perform — from brand identity and trade show programs to websites and campaign production.</p>
-    <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+    <div class="hero-buttons">
       <a href="work.html" class="btn">View Work</a>
       <a href="contact.html" class="btn btn-outline">Get in Touch</a>
     </div>
@@ -73,13 +77,13 @@
       </a>
 
     </div>
-    <div style="margin-top:2.5rem;">
+    <div class="view-all">
       <a href="work.html" class="btn btn-outline">View All Work</a>
     </div>
   </section>
 
   <!-- SERVICES -->
-  <section style="background:#f5f5f3;">
+  <section class="bg-gray">
     <p class="section-label">What I Do</p>
     <h2 class="section-title">Full-spectrum creative<br>from concept to production.</h2>
     <div class="services-grid">
@@ -117,13 +121,13 @@
   </section>
 
   <!-- ABOUT STRIP -->
-  <section class="about-strip" style="padding:0;">
-    <div style="padding: 5rem 4rem;">
+  <section class="about-strip">
+    <div class="about-strip-content">
       <p class="section-label">About</p>
-      <h2 class="section-title" style="color:white;">10+ years turning technical complexity into clear, compelling creative.</h2>
+      <h2 class="section-title">10+ years turning technical complexity into clear, compelling creative.</h2>
       <p class="section-body">I've spent my career embedded in industrial and technical industries — chemical manufacturing, medical devices, construction — building creative programs that work as hard as the products they represent.</p>
       <br>
-      <a href="about.html" class="btn" style="background:white; color:black; margin-top:1rem;">More About Me</a>
+      <a href="about.html" class="btn">More About Me</a>
     </div>
     <div class="about-image"></div>
   </section>
@@ -143,5 +147,14 @@
     <span>ejastudio.com</span>
   </footer>
 
+  <script>
+    var toggle = document.querySelector('.nav-toggle');
+    var links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', function() {
+      var open = links.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
 </body>
 </html>

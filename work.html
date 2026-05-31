@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Work — EJA Studio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,6 +13,9 @@
 
   <nav>
     <a href="index.html" class="nav-logo">EJA Studio</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <ul class="nav-links">
       <li><a href="work.html" class="active">Work</a></li>
       <li><a href="about.html">About</a></li>
@@ -19,7 +23,7 @@
     </ul>
   </nav>
 
-  <section style="padding-top: 9rem;">
+  <section class="section--top">
     <p class="section-label">Selected Work</p>
     <h1 class="section-title">Case studies across<br>technical and industrial sectors.</h1>
   </section>
@@ -80,5 +84,14 @@
     <span>ejastudio.com</span>
   </footer>
 
+  <script>
+    var toggle = document.querySelector('.nav-toggle');
+    var links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', function() {
+      var open = links.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
 </body>
 </html>

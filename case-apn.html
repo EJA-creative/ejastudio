@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>APN — World of Concrete — EJA Studio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,6 +13,9 @@
 
   <nav>
     <a href="index.html" class="nav-logo">EJA Studio</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <ul class="nav-links">
       <li><a href="work.html" class="active">Work</a></li>
       <li><a href="about.html">About</a></li>
@@ -22,7 +26,7 @@
   <!-- 1. HERO — title + meta, no image yet -->
   <div class="case-hero">
     <p class="section-label">Trade Show / Brand Identity / Production</p>
-    <h1 class="section-title" style="font-size: clamp(2rem, 4vw, 3.5rem); max-width: 18ch;">APN — American Polymers Network<br>World of Concrete 2026</h1>
+    <h1 class="section-title case-hero-title">APN — American Polymers Network<br>World of Concrete 2026</h1>
     <div class="case-hero-meta">
       <div class="case-meta-item">
         <p class="case-meta-label">Client</p>
@@ -121,5 +125,14 @@
     <span>ejastudio.com</span>
   </footer>
 
+  <script>
+    var toggle = document.querySelector('.nav-toggle');
+    var links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', function() {
+      var open = links.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
 </body>
 </html>
