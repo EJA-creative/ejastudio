@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avante Health Solutions — EJA Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">EJA Studio</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="work.html" class="active">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="case-hero">
+    <p class="section-label">Brand / Print / Trade Show</p>
+    <h1 class="section-title case-hero-title">Avante Health Solutions</h1>
+    <div class="case-hero-meta">
+      <div class="case-meta-item">
+        <p class="case-meta-label">Client</p>
+        <p class="case-meta-value">Avante Health Solutions</p>
+      </div>
+      <div class="case-meta-item">
+        <p class="case-meta-label">Industry</p>
+        <p class="case-meta-value">Healthcare / Medical Equipment</p>
+      </div>
+      <div class="case-meta-item">
+        <p class="case-meta-label">Scope</p>
+        <p class="case-meta-value">Brand, Catalog, Trade Show</p>
+      </div>
+      <div class="case-meta-item">
+        <p class="case-meta-label">Role</p>
+        <p class="case-meta-value">Creative Lead</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO PLACEHOLDER -->
+  <div style="width:100%; aspect-ratio:16/9; background:#d0d4cf; display:block;"></div>
+
+  <!-- CHALLENGE + APPROACH -->
+  <div class="case-overview">
+    <div class="case-overview-col">
+      <p class="section-label">The Challenge</p>
+      <p>Avante Health Solutions provides medical equipment and service solutions across a complex product portfolio — from anesthesia systems to patient monitoring and biomedical services. The scope of their offering made brand consistency a constant challenge: the same brand had to work at a trade show booth, inside a product catalog, and on a sell sheet in a hospital procurement meeting.</p>
+      <p>The goal was a cohesive brand standards system and production suite that could scale across multiple touchpoints without losing visual discipline.</p>
+    </div>
+    <div class="case-overview-col">
+      <p class="section-label">The Approach</p>
+      <p>I developed brand standards that gave the internal team and external vendors a clear framework for consistent execution. From there, I applied those standards across their highest-impact materials: a multi-section product catalog, trade show exhibit graphics, and a library of marketing assets their team could deploy across channels.</p>
+      <p>Catalog production required close coordination with their product and sales teams to organize a deep SKU library into a structure that read clearly for procurement buyers — technical accuracy paired with visual hierarchy that reduced friction in the selection process.</p>
+    </div>
+  </div>
+
+  <!-- PROCESS -->
+  <div class="case-process">
+    <div class="case-process-label">
+      <p class="section-label">Design</p>
+      <h3>Catalog Layout & Brand Standards</h3>
+      <p>Multi-section product catalog built on a modular grid — scalable across categories and print runs without redesign overhead.</p>
+    </div>
+    <div style="width:100%; aspect-ratio:16/9; background:#c4c8c2; display:block; border-radius:2px;"></div>
+  </div>
+
+  <!-- RESULT -->
+  <div class="case-result-intro">
+    <p class="section-label">The Result</p>
+    <h2>A unified creative system that gave Avante's team a consistent brand voice across every market-facing touchpoint.</h2>
+    <div class="case-stat-row">
+      <div class="case-stat">
+        <p class="case-stat-number">Full</p>
+        <p class="case-stat-label">Brand standards developed</p>
+      </div>
+      <div class="case-stat">
+        <p class="case-stat-number">Multi</p>
+        <p class="case-stat-label">Section catalog produced</p>
+      </div>
+      <div class="case-stat">
+        <p class="case-stat-number">Trade</p>
+        <p class="case-stat-label">Show graphics delivered</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="width:100%; aspect-ratio:16/9; background:#d0d4cf; display:block; margin-bottom:4px;"></div>
+  <div style="width:100%; aspect-ratio:16/9; background:#c4c8c2; display:block;"></div>
+
+  <div class="case-nav">
+    <a href="case-tenacore.html">← Previous Project</a>
+    <a href="work.html">All Work →</a>
+  </div>
+
+  <footer>
+    <span>© 2026 EJA Studio — Eric Adams</span>
+    <span>ejastudio.com</span>
+  </footer>
+
+  <script>
+    var toggle = document.querySelector('.nav-toggle');
+    var links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', function() {
+      var open = links.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

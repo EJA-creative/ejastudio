@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tenacore — Medical Device Marketing — EJA Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">EJA Studio</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="work.html" class="active">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="case-hero">
+    <p class="section-label">Graphic Design / Print / Trade Show</p>
+    <h1 class="section-title case-hero-title">Tenacore —<br>Medical Device Marketing</h1>
+    <div class="case-hero-meta">
+      <div class="case-meta-item">
+        <p class="case-meta-label">Client</p>
+        <p class="case-meta-value">Tenacore</p>
+      </div>
+      <div class="case-meta-item">
+        <p class="case-meta-label">Industry</p>
+        <p class="case-meta-value">Medical Devices</p>
+      </div>
+      <div class="case-meta-item">
+        <p class="case-meta-label">Scope</p>
+        <p class="case-meta-value">Advertising, Trade Graphics, Print</p>
+      </div>
+      <div class="case-meta-item">
+        <p class="case-meta-label">Role</p>
+        <p class="case-meta-value">Creative Director</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO PLACEHOLDER -->
+  <div style="width:100%; aspect-ratio:16/9; background:#d4cfd0; display:block;"></div>
+
+  <!-- CHALLENGE + APPROACH -->
+  <div class="case-overview">
+    <div class="case-overview-col">
+      <p class="section-label">The Challenge</p>
+      <p>Tenacore operates in a regulated, detail-driven industry where every claim matters and every visual has to communicate trust. Their marketing materials had grown inconsistent over time — different vendors, different formats, no unified look — and the company was heading into a key trade show season.</p>
+      <p>The work needed to meet a high bar for accuracy and compliance while still being visually compelling. Technical audiences don't want spin — they want clarity, and they can tell the difference.</p>
+    </div>
+    <div class="case-overview-col">
+      <p class="section-label">The Approach</p>
+      <p>I worked with Tenacore's marketing and product teams to create a cohesive suite of materials across advertising, trade show graphics, and print collateral. The system prioritized clear product hierarchy, consistent brand voice, and production quality that held up at large format.</p>
+      <p>Trade show graphics were designed for impact at distance and legibility up close — a balance that requires tight control over scale, contrast, and message density. Print collateral was structured to support the sales process, with spec sheets, product comparisons, and leave-behinds all built on a shared template system.</p>
+    </div>
+  </div>
+
+  <!-- PROCESS -->
+  <div class="case-process">
+    <div class="case-process-label">
+      <p class="section-label">Production</p>
+      <h3>Trade Show & Collateral System</h3>
+      <p>Coordinated suite of print-ready materials — from large-format trade show panels to tabloid sell sheets — built on consistent brand standards.</p>
+    </div>
+    <div style="width:100%; aspect-ratio:16/9; background:#c8c4c6; display:block; border-radius:2px;"></div>
+  </div>
+
+  <!-- RESULT -->
+  <div class="case-result-intro">
+    <p class="section-label">The Result</p>
+    <h2>A cohesive marketing system that let Tenacore's products speak clearly in any format or setting.</h2>
+    <div class="case-stat-row">
+      <div class="case-stat">
+        <p class="case-stat-number">Unified</p>
+        <p class="case-stat-label">Brand across all formats</p>
+      </div>
+      <div class="case-stat">
+        <p class="case-stat-number">Trade</p>
+        <p class="case-stat-label">Show-ready at large format</p>
+      </div>
+      <div class="case-stat">
+        <p class="case-stat-number">Full</p>
+        <p class="case-stat-label">Collateral system built</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="width:100%; aspect-ratio:16/9; background:#d4cfd0; display:block; margin-bottom:4px;"></div>
+  <div style="width:100%; aspect-ratio:16/9; background:#c8c4c6; display:block;"></div>
+
+  <div class="case-nav">
+    <a href="case-crown.html">← Previous Project</a>
+    <a href="case-avante.html">Next Project →</a>
+  </div>
+
+  <footer>
+    <span>© 2026 EJA Studio — Eric Adams</span>
+    <span>ejastudio.com</span>
+  </footer>
+
+  <script>
+    var toggle = document.querySelector('.nav-toggle');
+    var links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', function() {
+      var open = links.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
