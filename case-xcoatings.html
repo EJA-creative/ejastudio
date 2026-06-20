@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XCoatings — Brand Launch — EJA Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">EJA Studio</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="work.html" class="active">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="case-hero">
+    <p class="section-label">Brand Identity / Launch</p>
+    <h1 class="section-title case-hero-title">XCoatings<br>Brand Launch</h1>
+    <div class="case-hero-meta">
+      <div class="case-meta-item">
+        <p class="case-meta-label">Client</p>
+        <p class="case-meta-value">XCoatings by Polycoat USA</p>
+      </div>
+      <div class="case-meta-item">
+        <p class="case-meta-label">Scope</p>
+        <p class="case-meta-value">Brand Identity, Trade Show, Collateral, Video</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO IMAGE — marine/rv as strongest available -->
+  <img src="images/xcoatings/Marine-RV-Manufacturing.png" alt="XCoatings — Marine & RV Manufacturing industry application" class="case-photo-full" style="margin-bottom:0;">
+
+  <!-- CHALLENGE + APPROACH -->
+  <div class="case-overview">
+    <div class="case-overview-col">
+      <p class="section-label">The Challenge</p>
+      <p>XCoatings by Polycoat USA was a technically advanced product entering a competitive market with no brand and no presence. Everything needed to be built from scratch — identity, large-scale graphics, materials, and a full trade show environment — all cohesive enough to launch a new product with credibility.</p>
+    </div>
+    <div class="case-overview-col">
+      <p class="section-label">The Work</p>
+      <p>Starting from scratch, I built the XCoatings brand identity — logo, visual language, and the design system to support it. From there: a 20×20 ft trade show booth with a 20 ft backdrop, print collateral and flyers, and video production support for a brand film shown at the show. The booth centered on a live robotics demonstration — the automation technology that makes XCoatings viable at manufacturing scale.</p>
+      <p>Every deliverable had to communicate something technically complex to an audience of engineers and manufacturers, clearly and quickly.</p>
+    </div>
+  </div>
+
+  <!-- RESULT -->
+  <div class="case-result-intro">
+    <p class="section-label">The Result</p>
+    <h2>XCoatings debuted at CAMX with a full brand presence — identity, environment, and content built from the ground up in months.</h2>
+  </div>
+
+  <!-- INDUSTRY APPLICATIONS GRID -->
+  <div class="case-image-grid">
+    <img src="images/xcoatings/Construction-Architectural-Panels.png" alt="XCoatings — Construction & Architectural Panels application">
+    <img src="images/xcoatings/Bathware-Aquatic-Products.png" alt="XCoatings — Bathware & Aquatic Products application">
+    <img src="images/xcoatings/truck-panel-1.png" alt="XCoatings — Transportation truck panel application">
+  </div>
+
+  <div class="case-nav">
+    <a href="case-makita.html">← Previous</a>
+    <a href="work.html">All Work →</a>
+  </div>
+
+  <footer>
+    <span>© 2026 EJA Studio — Eric Adams</span>
+    <span>ejastudio.com</span>
+  </footer>
+
+  <script>
+    var toggle = document.querySelector('.nav-toggle');
+    var links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', function() {
+      var open = links.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

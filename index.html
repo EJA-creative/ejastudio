@@ -36,49 +36,91 @@
 
   <!-- SELECTED WORK -->
   <section>
-    <p class="section-label">Selected Work</p>
-    <h2 class="section-title">Projects built for<br>industries that mean business.</h2>
+    <div class="work-index">
+      <span class="work-index-label">Work</span>
+      <span class="work-index-meta">06 Projects — 2018&ndash;2026</span>
+    </div>
     <div class="work-grid">
 
       <a href="case-apn.html" class="work-card">
-        <div class="work-card-image" style="background:#d4cfc8; height:300px;"></div>
+        <div class="work-card-image work-card-logo work-card-logo--apn" style="height:300px;">
+          <div class="brand-lockup">
+            <span class="brand-star">&#9733;</span>
+            <span class="brand-name">APN</span>
+            <span class="brand-divider"></span>
+            <span class="brand-sub">American<br>Polymers<br>Network</span>
+          </div>
+        </div>
         <div class="work-card-info">
           <p class="work-card-tag">Trade Show / Brand</p>
-          <h3 class="work-card-title">APN — World of Concrete</h3>
-          <p class="work-card-desc">50-foot trade show exhibit, creative direction, and landing page for American Polymers Network's flagship industry appearance.</p>
+          <h3 class="work-card-title">World of Concrete</h3>
         </div>
       </a>
 
-      <a href="case-ezflow.html" class="work-card">
-        <div class="work-card-image" style="background:#c8d4cf; height:300px;"></div>
+      <a href="case-polyfil.html" class="work-card">
+        <div class="work-card-image work-card-logo work-card-logo--poly" style="height:300px;">
+          <div class="brand-lockup">
+            <span class="brand-name">Poly&#8209;Fil</span>
+          </div>
+        </div>
         <div class="work-card-info">
-          <p class="work-card-tag">Brand Identity / Launch</p>
-          <h3 class="work-card-title">EZ Flow Foam — Full Brand Launch</h3>
-          <p class="work-card-desc">Logo creation, brand identity, packaging, technical collateral, and full digital presence for a new product line launch.</p>
+          <p class="work-card-tag">Web Design / Brand Launch</p>
+          <h3 class="work-card-title">Brand Launch & Website</h3>
         </div>
       </a>
 
       <a href="case-crown.html" class="work-card">
-        <div class="work-card-image" style="background:#cfd0d4; height:300px;"></div>
+        <div class="work-card-image work-card-logo work-card-logo--crown" style="height:300px;">
+          <div class="brand-lockup">
+            <span class="brand-name" style="letter-spacing:0.02em;">CROWN</span>
+            <span class="brand-divider"></span>
+            <span class="brand-sub" style="letter-spacing:0.18em;">Polymers</span>
+          </div>
+        </div>
         <div class="work-card-info">
-          <p class="work-card-tag">Web / Digital</p>
-          <h3 class="work-card-title">Crown Polymers — Web Presence</h3>
-          <p class="work-card-desc">Website launch and brand alignment for a specialty coatings manufacturer, bridging design vision with development execution.</p>
+          <p class="work-card-tag">Creative Direction / Web</p>
+          <h3 class="work-card-title">Website Overhaul</h3>
         </div>
       </a>
 
-      <a href="case-tenacore.html" class="work-card">
-        <div class="work-card-image" style="background:#d4cfd0; height:300px;"></div>
+      <a href="case-avante.html" class="work-card">
+        <div class="work-card-image work-card-logo work-card-logo--avante" style="height:300px;">
+          <div class="brand-lockup">
+            <span class="brand-name">Avante</span>
+            <span class="brand-divider"></span>
+            <span class="brand-sub">Health<br>Solutions</span>
+          </div>
+        </div>
         <div class="work-card-info">
-          <p class="work-card-tag">Graphic Design / Production</p>
-          <h3 class="work-card-title">Tenacore — Medical Device Marketing</h3>
-          <p class="work-card-desc">Design and production work for a medical device company, including advertising, trade graphics, and print collateral.</p>
+          <p class="work-card-tag">Brand / Print / Campaign</p>
+          <h3 class="work-card-title">Rebrand & Marketing</h3>
         </div>
       </a>
 
-    </div>
-    <div class="view-all">
-      <a href="work.html" class="btn btn-outline">View All Work</a>
+      <a href="case-makita.html" class="work-card">
+        <div class="work-card-image work-card-logo work-card-logo--makita" style="height:300px;">
+          <div class="brand-lockup">
+            <span class="brand-name" style="letter-spacing:0.01em;">makita</span>
+          </div>
+        </div>
+        <div class="work-card-info">
+          <p class="work-card-tag">Production / Photography / Print</p>
+          <h3 class="work-card-title">Catalog & Photography</h3>
+        </div>
+      </a>
+
+      <a href="case-xcoatings.html" class="work-card">
+        <div class="work-card-image work-card-logo work-card-logo--xco" style="height:300px;">
+          <div class="brand-lockup">
+            <span class="brand-name">X<span class="brand-accent">Coatings</span></span>
+          </div>
+        </div>
+        <div class="work-card-info">
+          <p class="work-card-tag">Brand Identity / Launch</p>
+          <h3 class="work-card-title">Brand Launch</h3>
+        </div>
+      </a>
+
     </div>
   </section>
 
@@ -155,6 +197,24 @@
       toggle.classList.toggle('is-open', open);
       toggle.setAttribute('aria-expanded', open);
     });
+
+    (function() {
+      var slides = Array.from(document.querySelectorAll('.hero-slide'));
+      if (!slides.length) return;
+      var cur = 0, paused = false, timer;
+      function go(n) {
+        slides[cur].classList.remove('active');
+        cur = (n + slides.length) % slides.length;
+        slides[cur].classList.add('active');
+      }
+      function start() { timer = setInterval(function() { if (!paused) go(cur + 1); }, 5000); }
+      var right = document.querySelector('.hero-right');
+      if (right) {
+        right.addEventListener('mouseenter', function() { paused = true; });
+        right.addEventListener('mouseleave', function() { paused = false; });
+      }
+      start();
+    })();
   </script>
 </body>
 </html>

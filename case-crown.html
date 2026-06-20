@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crown Polymers — Website Overhaul — EJA Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">EJA Studio</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="work.html" class="active">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="case-hero">
+    <p class="section-label">Creative Direction / Web / Project Management</p>
+    <h1 class="section-title case-hero-title">Crown Polymers<br>Website Overhaul</h1>
+    <div class="case-hero-meta">
+      <div class="case-meta-item">
+        <p class="case-meta-label">Client</p>
+        <p class="case-meta-value">Crown Polymers</p>
+      </div>
+      <div class="case-meta-item">
+        <p class="case-meta-label">Scope</p>
+        <p class="case-meta-value">Full Site Redesign, Content Strategy, Asset Production</p>
+      </div>
+      <div class="case-meta-item">
+        <p class="case-meta-label">Role</p>
+        <p class="case-meta-value">Creative Director & Project Lead</p>
+      </div>
+      <div class="case-meta-item">
+        <p class="case-meta-label">Timeframe</p>
+        <p class="case-meta-value">6 Months</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO IMAGE -->
+  <img src="images/crown/Crown_Homepage.png" alt="Crown Polymers website — Prepare to Be Floored homepage" class="case-photo-full" style="margin-bottom:0;">
+
+  <!-- CHALLENGE + APPROACH -->
+  <div class="case-overview">
+    <div class="case-overview-col">
+      <p class="section-label">The Challenge</p>
+      <p>Crown Polymers had a product catalog that could fill a warehouse, and a website that made it nearly impossible to find any of it. Navigation was unclear, product categories weren't well explained, and the sales team had no good digital tool to point customers to.</p>
+      <p>The site was working against the brand instead of for it.</p>
+    </div>
+    <div class="case-overview-col">
+      <p class="section-label">The Approach</p>
+      <p>I came in as the creative and project lead — the connective layer between Crown's internal sales team, an outside web agency, and a designer building the visual assets. I audited the existing content, rebuilt the navigation architecture from scratch, and established how a broad product line could be organized so that contractors and specifiers could actually find what they needed.</p>
+      <p>From there I directed the full asset buildout: Photoshop mockups showing product applications, studio photography of coating samples, and all copy needed to bring each product category to life. Every section had to explain not just what the product was, but where it gets used and why it works.</p>
+    </div>
+  </div>
+
+  <!-- NAVIGATION ARCHITECTURE -->
+  <div class="case-process">
+    <div class="case-process-label">
+      <p class="section-label">Information Architecture</p>
+      <h3>Navigation Built for Contractors</h3>
+      <p>A mega-nav organizing an expansive product line by industry and application — so specifiers can find what they need without a phone call.</p>
+    </div>
+    <img src="images/crown/Crown_MegaNav_Products.png" alt="Crown Polymers mega navigation — product categories">
+  </div>
+
+  <!-- RESULT -->
+  <div class="case-result-intro">
+    <p class="section-label">The Result</p>
+    <h2>A site that works the way the business actually works — organized by industry, searchable by product, and useful enough that the internal sales team uses it as a tool, not just a brochure.</h2>
+  </div>
+
+  <div class="case-process">
+    <div class="case-process-label">
+      <p class="section-label">Product Pages</p>
+      <h3>Built for Specifiers</h3>
+      <p>Individual product pages with application context, specs, and related products — giving contractors everything they need to specify without picking up the phone.</p>
+    </div>
+    <img src="images/crown/Crown_ProductInterior_Epoxy.png" alt="Crown Polymers product interior page — CrownFlake DT Floor System">
+  </div>
+
+  <div class="case-nav">
+    <a href="case-avante.html">← Previous</a>
+    <a href="case-makita.html">Next Project →</a>
+  </div>
+
+  <footer>
+    <span>© 2026 EJA Studio — Eric Adams</span>
+    <span>ejastudio.com</span>
+  </footer>
+
+  <script>
+    var toggle = document.querySelector('.nav-toggle');
+    var links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', function() {
+      var open = links.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

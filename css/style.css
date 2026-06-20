@@ -66,12 +66,72 @@ nav {
 
 /* HERO */
 .hero {
-  min-height: 100vh;
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 7rem 4rem 4rem;
+  background: #f0ede8;
+}
+
+/* SPLIT HERO */
+.hero-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  background: #f0ede8;
+}
+
+.hero-left {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 0 4rem 5rem;
-  background: var(--gray);
+}
+
+.hero-right {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+.hero-slide.active { opacity: 1; }
+
+.hero-slide-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(240,237,232,0.45);
+}
+
+.hero-slide-label {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(26,23,20,0.5);
+}
+
+.hero-slide-rule {
+  display: block;
+  width: 20px;
+  height: 1px;
+  background: currentColor;
+  flex-shrink: 0;
 }
 
 .hero-eyebrow {
@@ -136,6 +196,29 @@ section { padding: 6rem 4rem; }
   margin-bottom: 1rem;
 }
 
+.work-index {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.work-index-label {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+
+.work-index-meta {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mid-gray);
+}
+
 .section-title {
   font-size: clamp(1.8rem, 3vw, 2.6rem);
   font-weight: 700;
@@ -177,6 +260,51 @@ section { padding: 6rem 4rem; }
 }
 
 .work-card:hover .work-card-image { transform: scale(1.03); }
+
+/* Brand-logo thumbnail (used when no photo is available) */
+.work-card-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-card-logo--apn { background: #14213d; }
+.work-card-logo--poly { background: #0a548c; }
+.work-card-logo--crown { background: #2a2d34; }
+.work-card-logo--avante { background: #16263f; }
+.work-card-logo--makita { background: #00798c; }
+.work-card-logo--xco { background: #1c1917; }
+
+.brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+}
+
+.brand-lockup .brand-star { font-size: 1.4rem; color: #e8b84a; }
+.brand-lockup .brand-accent { color: #b5813c; }
+
+.brand-lockup .brand-name {
+  font-size: 2.8rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+.brand-lockup .brand-divider {
+  width: 1px;
+  height: 2.6rem;
+  background: rgba(255,255,255,0.45);
+}
+
+.brand-lockup .brand-sub {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85);
+}
 
 .work-card-info {
   padding: 1.5rem;
@@ -579,6 +707,9 @@ footer {
 @media (max-width: 900px) {
   nav { padding: 1.25rem 2rem; }
   .hero, section { padding-left: 2rem; padding-right: 2rem; }
+  .hero-split { grid-template-columns: 1fr; }
+  .hero-left { padding: 8rem 2rem 3rem; }
+  .hero-right { min-height: 50vw; }
   .work-grid { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: 1fr; }
   .about-strip { grid-template-columns: 1fr; gap: 0; }

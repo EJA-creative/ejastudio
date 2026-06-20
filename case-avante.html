@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avante Health Solutions — Brand & Marketing — EJA Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">EJA Studio</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="work.html" class="active">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="case-hero">
+    <p class="section-label">Brand / Print / Campaign</p>
+    <h1 class="section-title case-hero-title">Avante Health Solutions<br>Brand & Marketing</h1>
+    <div class="case-hero-meta">
+      <div class="case-meta-item">
+        <p class="case-meta-label">Client</p>
+        <p class="case-meta-value">Avante Health Solutions (formerly Pacific Medical)</p>
+      </div>
+      <div class="case-meta-item">
+        <p class="case-meta-label">Industry</p>
+        <p class="case-meta-value">Medical Equipment</p>
+      </div>
+      <div class="case-meta-item">
+        <p class="case-meta-label">Scope</p>
+        <p class="case-meta-value">Print Advertising, Trade Show, Collateral, Rebrand</p>
+      </div>
+      <div class="case-meta-item">
+        <p class="case-meta-label">Role</p>
+        <p class="case-meta-value">Lead Graphic Designer</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO IMAGE — the rebrand moment -->
+  <img src="images/avante/pacmed/pacmed-03.jpg" alt="Pacific Medical 'will soon be Avante' infusion pump campaign — the rebrand transition" class="case-photo-full" style="margin-bottom:0; aspect-ratio:auto; height:auto; object-fit:contain;">
+
+  <!-- CHALLENGE + APPROACH -->
+  <div class="case-overview">
+    <div class="case-overview-col">
+      <p class="section-label">The Challenge</p>
+      <p>Pacific Medical had built a strong reputation servicing and selling medical equipment — but the brand hadn't kept pace with the business. When the company rebranded to Avante Health Solutions, everything visual needed to move with it: advertising, trade show presence, collateral, and internal materials.</p>
+      <p>The transition had to feel authoritative, not like a name change on old templates.</p>
+    </div>
+    <div class="case-overview-col">
+      <p class="section-label">The Approach</p>
+      <p>I came in as a freelance catalog designer and expanded into the lead graphic designer role, taking ownership of all marketing channels. I produced ongoing print advertising across medical equipment categories — infusion pumps, telemetry, patient monitoring — placed in trade publications on a monthly cadence.</p>
+      <p>The centerpiece was the rebrand transition itself: designing the announcement campaign that introduced Avante to the market and retired the Pacific Medical identity across the full suite of trade show materials, sales collateral, and the ongoing ad calendar.</p>
+    </div>
+  </div>
+
+  <!-- TRADE SHOW -->
+  <div class="case-process">
+    <div class="case-process-label">
+      <p class="section-label">Environmental</p>
+      <h3>Live on the Show Floor</h3>
+      <p>The new Avante identity carried across the trade show booth — branded backwalls and counters introducing the rebrand to the market.</p>
+    </div>
+    <img src="images/avante/pacmed/pacmed-01.jpg" alt="Avante-branded trade show booth on the show floor">
+  </div>
+
+  <!-- RESULT + COLLATERAL GRID -->
+  <div class="case-result-intro">
+    <p class="section-label">The Result</p>
+    <h2>A complete marketing presence carried through a rebrand transition — consistent across every channel, built and maintained by one designer.</h2>
+  </div>
+
+  <div class="case-image-grid">
+    <img src="images/avante/pacmed/pacmed-06.jpg" alt="Avante 2018 Equipment Brochure cover">
+    <img src="images/avante/pacmed/pacmed-04.jpg" alt="Full suite of Avante and Pacific Medical print collateral">
+    <img src="images/avante/pacmed/pacmed-02.jpg" alt="Parts purchasing collateral — detail">
+    <img src="images/avante/pacmed/pacmed-08.jpg" alt="PacMed Cables product rack card">
+  </div>
+
+  <div class="case-nav">
+    <a href="case-polyfil.html">← Previous</a>
+    <a href="case-crown.html">Next Project →</a>
+  </div>
+
+  <footer>
+    <span>© 2026 EJA Studio — Eric Adams</span>
+    <span>ejastudio.com</span>
+  </footer>
+
+  <script>
+    var toggle = document.querySelector('.nav-toggle');
+    var links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', function() {
+      var open = links.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

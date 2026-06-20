@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poly-Fil — Brand Launch & Website — EJA Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">EJA Studio</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="work.html" class="active">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="case-hero">
+    <p class="section-label">Web Design / Brand Launch</p>
+    <h1 class="section-title case-hero-title">Poly-Fil — Brand Launch<br>& Website</h1>
+    <div class="case-hero-meta">
+      <div class="case-meta-item">
+        <p class="case-meta-label">Client</p>
+        <p class="case-meta-value">Poly-Fil by Polycoat Products</p>
+      </div>
+      <div class="case-meta-item">
+        <p class="case-meta-label">Scope</p>
+        <p class="case-meta-value">Web Design, Brand Application</p>
+      </div>
+      <div class="case-meta-item">
+        <p class="case-meta-label">Role</p>
+        <p class="case-meta-value">Designer & Creative Lead</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO IMAGE -->
+  <img src="images/polyfil/Polyfil_Homepage.png" alt="Poly-Fil website homepage — No Flats. No Downtime. No Compromise." class="case-photo-full" style="margin-bottom:0;">
+
+  <!-- CHALLENGE + APPROACH -->
+  <div class="case-overview">
+    <div class="case-overview-col">
+      <p class="section-label">The Challenge</p>
+      <p>Poly-Fil had a real product with real traction — a polyurethane flat-proofing system used in construction, agriculture, military, and industrial fleets. But it lived as a single page buried inside the Polycoat parent site, listed alongside waterproofing and adhesives like any other product line.</p>
+      <p>For a system with five distinct formulations and customers across four industries, that wasn't enough real estate to tell the story. The brief: give Poly-Fil its own home.</p>
+    </div>
+    <div class="case-overview-col">
+      <p class="section-label">The Approach</p>
+      <p>Working from a brand guide and collateral system my team had built previously, I designed a full standalone website — structure, layout, content hierarchy, and visual direction — then handed off to a developer to build in WordPress.</p>
+      <p>The design challenge was making a technical product legible without dumbing it down. Poly-Fil's five formulations aren't interchangeable — each is tuned for specific load, speed, and environment conditions. The site needed to help the right buyer find the right product fast, without a phone call.</p>
+    </div>
+  </div>
+
+  <!-- BEFORE / AFTER -->
+  <div class="case-process">
+    <div class="case-process-label">
+      <p class="section-label">Before</p>
+      <h3>Buried on the Parent Site</h3>
+      <p>The original state — Poly-Fil as a single entry in Polycoat's product catalog, no standalone presence, no product architecture.</p>
+    </div>
+    <img src="images/polyfil/Polyfil_Before_Polycoat.png" alt="Poly-Fil before — buried on Polycoat parent site">
+  </div>
+
+  <!-- PRODUCT TABLE -->
+  <div class="case-process">
+    <div class="case-process-label">
+      <p class="section-label">Design Thinking</p>
+      <h3>Five Formulations, One Clear Table</h3>
+      <p>The comparison table was the core design challenge — making five technically distinct products navigable without a phone call.</p>
+    </div>
+    <img src="images/polyfil/Polyfil_Products_Table.png" alt="Poly-Fil product comparison table — five formulations">
+  </div>
+
+  <!-- INDUSTRIES -->
+  <div class="case-process">
+    <div class="case-process-label">
+      <p class="section-label">Structure</p>
+      <h3>Built Around How Customers Buy</h3>
+      <p>Industry cards — construction, agriculture, military, waste management — organized the site around buyer context, not product specs.</p>
+    </div>
+    <img src="images/polyfil/Polyfil_Industries.png" alt="Poly-Fil industry cards — construction, agriculture, military, waste management">
+  </div>
+
+  <!-- RESULT -->
+  <div class="case-result-intro">
+    <p class="section-label">The Result</p>
+    <h2>Poly-Fil went from a buried product page to a dedicated brand presence — its own URL, its own voice, built around how its customers actually buy.</h2>
+  </div>
+
+  <div class="case-image-grid">
+    <img src="images/polyfil/Polyfil_HowItWorks.png" alt="Poly-Fil how it works section">
+    <img src="images/polyfil/Polyfil_ProductInterior.png" alt="Poly-Fil individual product page">
+  </div>
+
+  <div class="case-nav">
+    <a href="work.html">← All Work</a>
+    <a href="case-avante.html">Next Project →</a>
+  </div>
+
+  <footer>
+    <span>© 2026 EJA Studio — Eric Adams</span>
+    <span>ejastudio.com</span>
+  </footer>
+
+  <script>
+    var toggle = document.querySelector('.nav-toggle');
+    var links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', function() {
+      var open = links.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
